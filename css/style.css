@@ -6124,8 +6124,11 @@ h6,
 }
 
 #AboutUs {
-  padding-left: 120px;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+#AboutUs, video, #parrafo1 {
+  padding-left: 30px;
 }
 
 #AboutUs h6{
@@ -6155,13 +6158,15 @@ video {
 }
 
 #botella {
-  width: 500px;
-  height: 264px;
+  width: 464px;
+  height: 246px;
+  margin-left: 30px;
 }
 
 #basuraVision {
-  width: 500px;
-  height: 264px;
+  width: 464px;
+  height: 246px;
+  margin-left: 30px;
 }
 
 .imgmaterial {

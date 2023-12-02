@@ -4318,8 +4318,129 @@
     }
 }
 
-@media (min-width: 992px) {
+@media (max-width: 1440px) {
+    #AboutUs {
+        flex-direction: column; /* Apila los elementos en pantallas más pequeñas */
+        text-align: center;
+        padding: -120px; /* Centra el texto en pantallas más pequeñas */
+    }
+
     .about-text {
-        margin-left: -120px;
+        margin-left: -30px;
+    }
+
+    video {
+        max-width: 100vh; /* Ajusta según tus necesidades */
+    }
+}
+
+@media (max-width: 1024px) {
+    #AboutUs {
+        flex-direction: column; /* Apila los elementos en pantallas más pequeñas */
+        text-align: center;
+        padding: -120px; /* Centra el texto en pantallas más pequeñas */
+    }
+
+    .about-text {
+        margin-left: -30px;
+    }
+
+    video {
+        max-width: 100vh; /* Ajusta según tus necesidades */
+    }
+
+    #botella {
+        max-width: 80vh;
+        max-height: 286px;
+        margin-top: 20px;
+    }
+    
+    #basuraVision {
+        max-width: 80vh;
+        max-height: 286px;
+    }
+}
+
+@media (max-width: 768px) {
+    #AboutUs {
+        flex-direction: column; /* Apila los elementos en pantallas más pequeñas */
+        text-align: center;
+        padding: -120px; /* Centra el texto en pantallas más pequeñas */
+    }
+
+    .text-uppercase {
+        margin-left: 20px;
+    }
+
+    .about-text {
+        margin-left: -45px;
+    }
+
+    video {
+        max-width: 100vh; /* Ajusta según tus necesidades */
+    }
+
+    #parrafo1 {
+        margin-left: 10px;
+    }
+
+    #botella {
+        max-width: 80vh;
+        max-height: 196px;
+        margin-top: -10px;
+        margin-bottom: 20px;
+        margin-left: 27px;
+    }
+
+    #parrafo2 {
+        margin-left: 20px;
+    }
+
+    #basuraVision {
+        max-width: 80vh;
+        max-height: 186px;
+        margin-bottom: -40px;
+        margin-left: 30px;
+    }
+
+    #parrafo3 {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    #AboutUs {
+        flex-direction: column; /* Apila los elementos en pantallas más pequeñas */
+        text-align: center;
+        padding: -120px; /* Centra el texto en pantallas más pequeñas */
+    }
+
+    .about-text {
+        margin-left: -45px;
+    }
+
+    video {
+        width: 150vh;
+        max-width: 100%;
+    }
+
+    #botella {
+        max-width: 35vh;
+        max-height: 146px;
+        margin-bottom: 20px;
+    }
+
+    #parrafo2 {
+        margin-left: 30px;
+    }
+
+    #basuraVision {
+        max-width: 35vh;
+        max-height: 146px;
+        margin-bottom: -40px;
+    }
+
+    #parrafo3 {
+        margin-left: 30px;
     }
 }
