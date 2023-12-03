@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
     initialView: 'dayGridMonth',
     locale:"es",
     headerToolbar:{
-        left:"prev,next today BotonSolicitud",
+        left:"prev,next today",
         center:"title",
-        right:"dayGridMonth,timeGridWeek"
+        right:"BotonSolicitud"
     },
     customButtons:{
         BotonSolicitud:{
