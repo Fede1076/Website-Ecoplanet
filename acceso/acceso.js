@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
     locale:"es",
     //button header
     headerToolbar:{
-        left:"prev",
-        center:"title",
-        right:"next"
+        left:"title",
+        center:"",
+        right:"prev,next"
     },
     //button footer
     footerToolbar:{

@@ -4335,6 +4335,11 @@
 }
 
 @media (max-width: 1024px) {
+    #logo {
+        max-width: 25vh;
+        max-height: 70px;
+    }
+
     #AboutUs {
         flex-direction: column; /* Apila los elementos en pantallas más pequeñas */
         text-align: center;
@@ -4362,6 +4367,11 @@
 }
 
 @media (max-width: 768px) {
+    #logo {
+        max-width: 18vh;
+        max-height: 70px;
+    }
+
     #AboutUs {
         flex-direction: column; /* Apila los elementos en pantallas más pequeñas */
         text-align: center;
@@ -4409,6 +4419,11 @@
 }
 
 @media (max-width: 425px) {
+    #logo {
+        max-width: 10vh !important;
+        max-height: 45px !important;
+    }
+
     #AboutUs {
         flex-direction: column; /* Apila los elementos en pantallas más pequeñas */
         text-align: center;
