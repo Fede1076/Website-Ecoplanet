@@ -48,22 +48,53 @@
 
     <!-- Modal -->
     <div class="modal fade" id="modalAccess" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog" role="document">
+            <form action="">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <div class="modal-header text-center">
+                    <h5 class="modal-title" id="exampleModalLabel">Formulario de solicitud</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <h6>Información de usuario</h6>
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="name" name="nombreUsuario" placeholder="Nombre o Usuario" class="form-control validate" required>
+                    <br>
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="tel" id="telefono" name="telefono" placeholder="telefono de contacto" class="form-control validate" required>
+                    <br>
+                    <h6>Detalles de material</h6>
+                    <label for="material">Elige el tipo de material</label><br>
+                    <i class="fa-solid fa-recycle"></i>
+                    <select id="material" name="material" class="form-control validate">
+                        <option value="Archivo">Archivo</option>
+                        <option value="Metales-Chatarra">Metales-Chatarra</option>
+                        <option value="Plástico">Plástico</option>
+                        <option value="Sub Productos">Sub Productos</option>
+                        <option value="Estibas de madera">Estibas de madera</option>
+                    </select>
+                    <br>
+                    <h6>Fecha y Hora de Recogida</h6>
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <input type="date" id="fechaRecogida" name="fechaRecogida" placeholder="Fecha de Recogida" class="form-control validate" required><br>
+                    <i class="fa-solid fa-clock"></i>
+                    <input type="time" id="horaRecogida" name="horaRecogida" placeholder="Hora de Recogida" class="form-control validate" required>
+                    <br>
+                    <h6>Notas adicionales</h6>
+                    <i class="fa-solid fa-message"></i><br>
+                    <textarea name="notas" id="notas" cols="20" rows="5" class="form-control validate"></textarea><br>
+                    <input type="checkbox" id="confirmacion" name="confirmacion" required>
+                    <label for="confirmacion">Confirmo que la información es correcta.</label>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-secondary btnAccess" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary btnAccess">Enviar</button>
                 </div>
             </div>
+        </form>
         </div>
     </div>
+    <!--end modal-->
 
     <div class="container">
         <div class="col-md-8 offset-md-2">

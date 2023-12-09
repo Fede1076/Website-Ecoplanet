@@ -6155,6 +6155,31 @@ video {
   border-radius: 20px;
 }
 
+.contactoh6 {
+  margin: auto;
+}
+
+.login {
+  background-color: #fff;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+#btnLogin {
+  margin: auto;
+  border-radius: 20px;
+}
+
 #calendar {
   padding-top: 60px;
+}
+
+#modalAccess  input, textarea, select{
+  border-radius: 5px;
+}
+
+.btnAccess {
+  border-radius: 10px;
 }
