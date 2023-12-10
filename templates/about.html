@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-CO">
 
 <head>
     <meta charset="utf-8">
@@ -9,21 +9,20 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/Ecoplanet_Favicon.ico.png" rel="icon">
+    <link href="/static/img/Ecoplanet_Favicon.ico.png" rel="icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Navbar Start -->
+        <!-- Navbar Start -->
     <div class="container-fluid position-relative nav-bar p-0">
         <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
             <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
                 <a href="index.html" class="navbar-brand">
-                    <img src="./img/logo.jpg" id="logo" class="ml-4" style="width: 130px; height: 90px;" alt="">
+                    <img src="/static/img/logo.jpg" id="logo" class="ml-4" style="width: 130px; height: 90px;" alt="">
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -31,10 +30,10 @@
                 <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
                         <a href="index.html" class="nav-item nav-link">Inicio</a>
-                        <a href="about.html" class="nav-item nav-link">Nosotros</a>
                         <a href="service.html" class="nav-item nav-link">Servicios</a>
                         <a href="material.html" class="nav-item nav-link">Materiales</a>
-                        <a href="acceso.html" class="nav-item nav-link">Acceder</a>
+                        <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                        <a href="/login/core/templates/acceso.html" class="nav-item nav-link">Acceder</a>
                     </div>
                 </div>
             </nav>
@@ -47,57 +46,80 @@
     <div class="container-fluid page-header">
         <div class="container">
             <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-                <h3 class="display-4 text-white text-uppercase h3">Contacto</h3>
+                <h3 class="display-4 text-white text-uppercase h3">Sobre nosotros</h3>
                 <div class="d-inline-flex text-white">
                     <p class="m-0 text-uppercase"><a class="text-white" href="index.html">Inicio</a></p>
                     <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                    <p class="m-0 text-uppercase">Contacto</p>
+                    <p class="m-0 text-uppercase">Sobre nosotros</p>
                 </div>
             </div>
         </div>
     </div>
     <!-- Header End -->
 
-    <!-- Contact Start -->
-    <div class="container-fluid py-5" id="contact">
-        <div class="container py-5">
-            <div class="text-center mb-3 pb-3">
-                <h6 class="text-primary text-uppercase contactoh6" style="letter-spacing: 5px;">Contacto</h6>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="contact-form bg-white" style="padding: 30px;">
-                        <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                            <div class="form-row">
-                                <div class="control-group col-sm-6">
-                                    <input type="text" class="form-control p-4" id="name" placeholder="Nombre"
-                                        required="required" data-validation-required-message="Por favor introduzca su nombre" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="control-group col-sm-6">
-                                    <input type="email" class="form-control p-4" id="email" placeholder="Correo"
-                                        required="required" data-validation-required-message="Por favor introduzca su correo" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
+    <!-- About Start -->
+    <div class="container-fluid py-2" id="ABOUT">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-lg-12 pt-5 pb-lg-5 bg-white" id="AboutUs">
+                    <div class="about-text p-4 p-lg-5 my-lg-5">
+                        <h6 class="text-primary text-uppercase" style="letter-spacing: 2px;">¿Quienes somos?</h6><br>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <video src="/static/img/vidEcoplanet.mp4" class="w-100" controls style="object-fit: cover;"></video>
                             </div>
-                            <div class="control-group">
-                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Mensaje"
-                                    required="required"
-                                    data-validation-required-message="Por favor introduzca un mensaje"></textarea>
-                                <p class="help-block text-danger"></p>
+                            <div class="col-lg-6" id="parrafo1">
+                                <p>Ecoplanet nace en 2018 como respuesta a la necesidad de concientizar a las empresas de la importancia que es incrementar la tasa de reciclaje en Colombia, generando empleos y activando la economía a través de la adecuada disposición de residuos.</p>
                             </div>
-                            <div class="text-center">
-                                <button class="btn btn-primary py-3 px-4" type="submit" id="sendMessageButton">Enviar</button>
-                            </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Contact End -->
+    <!-- About End -->
 
+    <!--Continue about-->
+    <div class="container-fluid py-2" id="ABOUT">
+        <div class="container pt-2">
+            <div class="row">
+                <div class="col-lg-12 pt-5 pb-lg-5 bg-white" id="AboutUs">
+                    <div class="about-text p-4 p-lg-5 my-lg-5">
+                        <h6 class="text-primary text-uppercase" style="letter-spacing: 2px; size: 60px;">MISION</h6><br>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img id="botella" src="/static/img/the-bottle2.jpg" alt="">
+                            </div>
+                            <div class="col-lg-6" id="parrafo2">
+                                <p>Nuestra misión es contribuir con la sostenibilidad del planeta por medio de la recuperación de materiales que pueden ser reutilizables o transformables y reducir los impactos potenciales a través del ciclo de vida de los productos. El año 2030 es el año límite para frenar los efectos del cambio climático. El mundo enfrenta una carrera contra el tiempo en materia ambiental, América Latina es la región menos comprometida con el reciclaje, solo se recicla aproximadamente el 4,5% de los desechos, una cifra considerablemente baja en comparación con el promedio mundial que alcanza el 13,5%.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-2" id="ABOUT">
+        <div class="container pt-2">
+            <div class="row">
+                <div class="col-lg-12 pt-5 pb-lg-5  bg-white" id="AboutUs">
+                    <div class="about-text p-4 p-lg-5 my-lg-5">
+                        <h6 class="text-primary text-uppercase" style="letter-spacing: 2px;">VISION</h6><br>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img id="basuraVision" src="/static/img/garbage.jpg" alt="">
+                            </div>
+                            <div class="col-lg-6" id="parrafo3">
+                                <p>La visión que tenemos es poder tener una gestión eficaz y adecuada en el manejo de los residuos sólidos para la sostenibilidad del planeta.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End about-->
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
@@ -118,10 +140,10 @@
             <div class="col-lg-3 col-md-6 mb-5">
                 <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Enlaces</h5>
                 <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white-50 mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>Nosotros</a>
+                    <a class="text-white-50 mb-2" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contacto</a>
                     <a class="text-white-50 mb-2" href="service.html"><i class="fa fa-angle-right mr-2"></i>Servicios</a>
                     <a class="text-white-50 mb-2" href="material.html"><i class="fa fa-angle-right mr-2"></i>Materiales</a>
-                    <a class="text-white-50 mb-2" href="acceso.html"><i class="fa fa-angle-right mr-2"></i>Acceder</a>
+                    <a class="text-white-50 mb-2" href="/login/core/templates/acceso.html"><i class="fa fa-angle-right mr-2"></i>Acceder</a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
@@ -141,22 +163,20 @@
     </div>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa-solid fa-arrow-up" style="color: #ffffff;"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
+    <script src="/static/lib/easing/easing.min.js"></script>
 
     <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
+    <script src="/static/mail/jqBootstrapValidation.min.js"></script>
+    <script src="/static/mail/contact.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="/static/js/main.js"></script>
 </body>
 
 </html>
