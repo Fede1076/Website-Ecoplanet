@@ -12,16 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     },
     //button footer
     footerToolbar:{
-        left:"BotonSolicitud today"
-    },
-    //boton para mostrar la ventana modal
-    customButtons:{
-        BotonSolicitud:{
-            text:"Solicitar",
-            click:function(){
-                $("#modalAccess").modal("show");
-            }
-        }
+        left:"today"
     },
     //funcion para agregar un evento dando click a una casilla
     dateClick:function(info){
